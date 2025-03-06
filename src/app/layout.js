@@ -1,5 +1,7 @@
 
-import "./globals.css";
+import '../styles/home.scss';
+import '../styles/global.scss';
+import '../styles/main-layout.scss';
 
 
 export const metadata = {
@@ -11,7 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <main className={'main-layout'}>
         {children}
+        </main>
       </body>
     </html>
   );

@@ -1,0 +1,150 @@
+
+@use '_font-variables' as fontVar;
+@import "./mixins.scss";
+
+.home {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: popMed;
+    gap: fontVar.$em6;
+
+    .mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: fontVar.$em5;
+        padding-bottom: fontVar.$em5;
+        color: var(--negPfd);
+        font-family: popReg;
+        margin-bottom: fontVar.$em4;
+      
+    
+        .imgBox {
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: fontVar.$em3;
+    
+            .title {
+    
+                font-size: fontVar.$fs6;
+                color: var(--negPfd);
+                font-family: popBlack;
+              
+            }
+            p {
+                font-size: fontVar.$fs3;
+            }
+    
+            img {
+        
+                height: 70px;
+                width: auto;
+            }
+        }
+    
+    }
+    
+    .introWrapper {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--negPfd);
+    
+        .titBox {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 50%;
+
+            h1 {
+                font-size: fontVar.$fs7;
+            }
+
+            span {
+                font-family: popThin;
+            }
+        }
+    
+        .infBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            p {
+                span {
+
+                    color: var(--rojOscPfd);
+                    font-family: popBlack;
+                }
+            }
+
+            .pfd {
+                font-family: popBlack;
+                font-size: fontVar.$fs4;
+                margin: 0px;
+
+       
+            }
+
+            .subPfd {
+                font-size: fontVar.$fs3;
+                font-family: popReg;
+
+            }
+    
+        }
+    }
+
+    .misionVision {
+        h2 {
+            font-size: fontVar.$fs6;
+            font-family: popBlack;
+            max-width: 400px;
+        }
+
+        .gridMision {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            gap: fontVar.$em5;
+
+            .misBox {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                width: 100%;
+                padding: 0px;
+                font-size: fontVar.$fs3;
+                line-height: fontVar.$em4;
+                
+                .titBox {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    h3 {
+                        
+                        font-family: popBlack;
+                        font-size: fontVar.$fs4;
+                        margin: 0px;
+                    }
+                }
+    
+            }
+        }
+    }
+
+
+}
