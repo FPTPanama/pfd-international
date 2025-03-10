@@ -1,0 +1,14 @@
+
+@use '_font-variables' as fontVar;
+@import "./mixins.scss";
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: popReg;
+    border: 1px solid black;
+    width: 100%;
+    padding: fontVar.$em4;
+    margin-top: fontVar.$em5;
+}
