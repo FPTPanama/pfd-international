@@ -6,8 +6,14 @@ const Header = () => {
     <nav className='mainHeader'>
     <div className='imgBox'>
       <Image width={70} height={70} alt='logo' src={'/img/home/pfd_logo_color.svg'} />
-      <p className="title">PDF</p>
+      <p className="title">PFD</p>
       <p>INTERNATIONAL GROUP</p>
+    </div>
+
+    <div className="butBox">
+      <button>Mision</button>
+      <button>Our products</button>
+      <button>Contact us</button>
     </div>
   </nav>
   )
