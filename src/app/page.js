@@ -3,12 +3,51 @@
 import Image from "next/image";
 import { TbTargetArrow } from "react-icons/tb";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
-import { LiaRocketSolid } from "react-icons/lia";
+import { LiaRocketSolid, LiaIndustrySolid } from "react-icons/lia";
 import { GiMeltingMetal } from "react-icons/gi";
+import { TbWorldPin } from "react-icons/tb";
+import { PiGearBold } from "react-icons/pi";
+import { LuLaptopMinimalCheck } from "react-icons/lu";
+import { PiBatteryFullBold } from "react-icons/pi";
 
 
-const Page = () => (
-  <div className='home'>
+
+import React from 'react'
+
+const page = () => {
+
+  const whyChooseUs = [
+    {
+      title: 'Global Network',
+      info: '<span>Strong alliances</span> in major trade hubs worldwide',
+      icon: <TbWorldPin size={70}/>
+    },
+    {
+      title: 'Industry Expertise',
+      info: '<span>Deep knowledge</span> in sourcing and distributing industrial raw materials',
+      icon: <LiaIndustrySolid size={70}/>
+    },
+    {
+      title: 'Efficient Logistics',
+      info: 'Tailored solutions for <span>seamless international trade</span>',
+      icon: <PiGearBold size={70}/>
+    },
+    {
+      title: 'Quality & Compliance',
+      info: 'Commitment to <span>high standards</span> and regulatory adherence.',
+      icon: <LuLaptopMinimalCheck size={70}/>
+    },
+    {
+      title: 'Reliable Supply Chains',
+      info: '<span>Secure and consistent</span> product availability.',
+      icon: <PiBatteryFullBold size={70}/>
+    }
+  ]
+
+  return (
+    <div className='home'>
+
+      
 
     <section className="introWrapper">
 
@@ -128,9 +167,36 @@ const Page = () => (
         <h2>Main sources of supply</h2>
       </div>
 
+      <div className="imgBox">
+        <Image src={'/img/home/world_map.svg'} width={300} height={200}/>
+      </div>
+
+    </section>
+
+    <section className="whyChooseUs">
+
+      <div className="titBox">
+        <h2>Why <br />choose us?</h2>
+      </div>
+
+      <div className="griWhyUs">
+
+        {whyChooseUs.map((item, key) => {
+          return (
+            <div key={key} className="griBox">
+
+              {item.icon}
+              <h3>{item.title}</h3>
+              <p dangerouslySetInnerHTML={{__html: item.info}} />
+            </div>
+          )
+        })}
+      </div>
+
     </section>
 
   </div>
-)
+  )
+}
 
-export default Page;
+export default page

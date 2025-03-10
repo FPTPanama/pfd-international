@@ -189,5 +189,81 @@
 
     }
 
+    .mainSources {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .titBox {
+
+            width: 100%;
+            margin-bottom: fontVar.$em6;
+        }
+
+        .imgBox {
+
+            display: flex;
+            width: 80%;
+            margin: auto;
+
+            img {
+
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .whyChooseUs {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .titBox {
+            display: flex;
+            width: 100%;
+        }
+
+        .griWhyUs {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: fontVar.$em5;
+            margin-top: fontVar.$em5;
+            
+            .griBox {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: fontVar.$em2;
+
+                h3 {
+
+                    font-size: fontVar.$fs5;
+                    line-height: fontVar.$em3;
+                    font-family: popBlack;
+                    margin: 0px;
+                    margin-top: fontVar.$em2;
+                }
+
+                p {
+                    font-size: fontVar.$fs3;
+
+                    span {
+                        font-family: popBold;
+                        color: var(--rojOscPfd);
+                    }
+                }
+
+            }
+        }
+
+    }
+
 
 }
