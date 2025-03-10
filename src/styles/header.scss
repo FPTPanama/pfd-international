@@ -1,0 +1,60 @@
+@use '_font-variables' as fontVar;
+@import "./mixins.scss";
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: fontVar.$em5;
+    padding-bottom: fontVar.$em5;
+    color: var(--negPfd);
+    font-family: popReg;
+    margin-bottom: fontVar.$em4;
+    width: 100%;
+  
+
+    .imgBox {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: fontVar.$em3;
+
+        .title {
+
+            font-size: fontVar.$fs6;
+            color: var(--negPfd);
+            font-family: popBlack;
+          
+        }
+        p {
+            font-size: fontVar.$fs3;
+        }
+
+        img {
+    
+            height: 70px;
+            width: auto;
+        }
+    }
+
+    .butBox {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: fontVar.$em4;
+
+        button {
+
+            all: unset;
+            cursor: pointer;
+            font-family: popBlack;
+
+            &:hover {
+                color: var(--rojOscPfd);
+                font-size: fontVar.$fs3;
+            }
+        }
+    }
+
+}

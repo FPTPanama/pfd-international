@@ -1,0 +1,67 @@
+
+@use '_font-variables' as fontVar;
+@import "./mixins.scss";
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: popReg;
+    width: 100%;
+    padding: fontVar.$em4 0px;
+    margin-top: fontVar.$em5;
+    height: fit-content;
+    
+    p {
+        span {
+
+            font-family: popBlack;
+        }
+    }
+
+    .addBox {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+
+        .tit {
+            font-family: popBlack;
+            font-size: fontVar.$fs3;
+            margin: 0px;
+        }
+
+        .email {
+            font-family: popBlack;
+        }
+
+        p {
+            span {
+
+                font-family: popBlack;
+            }
+        }
+    }
+
+    .rigBox {
+
+        display: flex;
+        align-items: center;
+        gap: fontVar.$em2;
+        height: 100%;
+
+        .box {
+
+            width: 50px;
+            height: 100px;
+            background-color: rgb(157, 10, 10);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        
+    }
+}

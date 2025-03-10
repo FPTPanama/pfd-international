@@ -2,6 +2,10 @@
 import '../styles/home.scss';
 import '../styles/global.scss';
 import '../styles/main-layout.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/Header/Header';
 
 
 export const metadata = {
@@ -14,7 +18,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <main className={'main-layout'}>
-        {children}
+          <Header />
+          {children}
+          <Footer />
         </main>
       </body>
     </html>

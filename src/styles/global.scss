@@ -34,14 +34,26 @@ body {
 	
 	overflow-x: hidden;
 	font-size: 14px;
-	background-color: var(--colBlaPfd);
+	// background-color: var(--colBlaPfd);
+	background-color: #eff3f2;
+background-image: linear-gradient(180deg, #eff3f2 0%, #dfe4e4 56%);
+
 	background-size: cover;
 	background-size: 50%;
 	margin: 0;
 	padding: 0;
 
+	h2 {
+		font-size: fontVar.$fs7;
+		font-family: popBlack;
+		max-width: 400px;
+		margin: 0px;
+	}
+		
+
 }
-	
+
+
 
 .scale-up-center {
 	
