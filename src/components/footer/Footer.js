@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = dayjs().year();
   return (
     <div className='footerWrapper'>
-        <p><span>{`${currentYear} ©`}</span>  All rights reserved.</p>
+        <p><span>{`${currentYear} ©`}</span> All rights reserved.</p>
     </div>
   )
 }
