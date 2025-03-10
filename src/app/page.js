@@ -4,17 +4,12 @@ import Image from "next/image";
 import { TbTargetArrow } from "react-icons/tb";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { LiaRocketSolid } from "react-icons/lia";
+import { GiMeltingMetal } from "react-icons/gi";
 
 
 const Page = () => (
   <div className='home'>
-    <nav className='mainHeader'>
-      <div className='imgBox'>
-        <Image width={70} height={70} alt='logo' src={'/img/home/pfd_logo_color.svg'} />
-        <p className="title">PDF</p>
-        <p>INTERNATIONAL GROUP</p>
-      </div>
-    </nav>
+
     <section className="introWrapper">
 
       <div className="titBox">
@@ -81,6 +76,60 @@ const Page = () => (
       </div>
 
     </section>
+
+    <section className="ourPortafolio">
+
+      <div className="titBox">
+        <h2>Our Product portafolio</h2>
+        <p>We specialize in the trade and distribution
+        of industrial raw materials.</p>
+      </div>
+
+      <div className="infBox">
+
+        <div className="griProBox">
+
+          <div className="griBox">
+            <h3>Metal</h3>
+            <ul>
+              <li>Iron Ore</li>
+              <li>Anthracite</li>
+              <li>Pellets</li>
+              <li>Pig Iron</li>
+              <li>Steel</li>
+              <li>Aluminum</li>
+            </ul>
+          </div>
+          <div className="griBox">
+            <h3>Chemicals</h3>
+            <ul>
+              <li>Caustic Soda</li>
+              <li>Sulfuric Acid</li>
+              <li>Hydrochloric Acid</li>
+              <li>Sodium Hypochlorite</li>
+              <li>Ammonium Nitrate</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="imgBox"></div>
+
+
+      </div>
+
+
+
+    </section>
+
+    <section className="mainSources">
+
+      <div className="titBox">
+        <h2>Main sources of supply</h2>
+      </div>
+
+    </section>
+
   </div>
 )
 

@@ -10,43 +10,7 @@
     font-family: popMed;
     gap: fontVar.$em6;
 
-    .mainHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: fontVar.$em5;
-        padding-bottom: fontVar.$em5;
-        color: var(--negPfd);
-        font-family: popReg;
-        margin-bottom: fontVar.$em4;
-      
-    
-        .imgBox {
-    
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: fontVar.$em3;
-    
-            .title {
-    
-                font-size: fontVar.$fs6;
-                color: var(--negPfd);
-                font-family: popBlack;
-              
-            }
-            p {
-                font-size: fontVar.$fs3;
-            }
-    
-            img {
-        
-                height: 70px;
-                width: auto;
-            }
-        }
-    
-    }
+
     
     .introWrapper {
     
@@ -105,11 +69,6 @@
     }
 
     .misionVision {
-        h2 {
-            font-size: fontVar.$fs6;
-            font-family: popBlack;
-            max-width: 400px;
-        }
 
         .gridMision {
 
@@ -117,6 +76,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             width: 100%;
             gap: fontVar.$em5;
+            margin-top: fontVar.$em5;
 
             .misBox {
 
@@ -144,6 +104,89 @@
     
             }
         }
+    }
+
+    .ourPortafolio {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .titBox {
+
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            width: 100%;
+
+            p {
+                font-size: fontVar.$fs4;
+                max-width: 350px;
+           
+            }
+        }
+
+        .infBox {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+       
+
+            .griProBox {
+    
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 50%;
+                gap: fontVar.$em4;
+                
+                .griBox {
+                    
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+    
+               
+    
+                    h3 {
+    
+                        font-family: popBlack;
+                        font-size: fontVar.$fs5;
+                        margin: 0px;
+                    }
+    
+                    ul {
+                        list-style: none;
+                        list-style-position: outside;
+                        padding: 0px;
+
+                        li {
+                            font-size: fontVar.$fs4;
+                            font-family: popMed;
+                            line-height: calc(fontVar.$em3 * 1.2);
+                        }
+                    }
+                }
+            }
+
+            .imgBox {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+            }
+
+
+        }
+
+
+
     }
 
 

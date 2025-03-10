@@ -1,9 +1,13 @@
+@use '_font-variables' as fontVar;
+@import "./mixins.scss";
+
 .main-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin: auto;
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: fontVar.$em6;   
 }
