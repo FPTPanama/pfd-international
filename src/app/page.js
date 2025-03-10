@@ -53,9 +53,6 @@ const page = () => {
 
       <div className="titBox">
         <h1>PFD International Group <span>Global Trade & Logistics Solutions</span></h1>
-      </div>
-
-      <div className="infBox">
         <p className="pfd">We specialize in facilitating
           seamless global trade by providing <span>comprehensive
             logistics </span> and <span>supply chain solutions</span>.</p>
@@ -66,9 +63,15 @@ const page = () => {
         </p>
       </div>
 
+      <div className="infBox">
+
+      <Image src={'/img/home/camion_roquero.webp'} width={1960} height={1379} alt="camion"/>
+
+      </div>
+
     </section>
 
-    <section className="misionVision">
+    <section style={{display: 'none'}} id={'mision'} className="misionVision">
 
       <h2>Mision, vision and goals.</h2>
 
@@ -116,7 +119,7 @@ const page = () => {
 
     </section>
 
-    <section className="ourPortafolio">
+    <section style={{display: 'none'}}  id={'products'} className="ourPortafolio">
 
       <div className="titBox">
         <h2>Our Product portafolio</h2>
@@ -152,7 +155,9 @@ const page = () => {
 
         </div>
 
-        <div className="imgBox"></div>
+        <div className="imgBox">
+          <Image src={'/img/home/hierro.webp'} width={2165} height={2078} alt="hierro"/>
+        </div>
 
 
       </div>
@@ -161,19 +166,19 @@ const page = () => {
 
     </section>
 
-    <section className="mainSources">
+    <section style={{display: 'none'}}  className="mainSources">
 
       <div className="titBox">
         <h2>Main sources of supply</h2>
       </div>
 
       <div className="imgBox">
-        <Image src={'/img/home/world_map.svg'} width={300} height={200}/>
+        <Image src={'/img/home/world_map.svg'} width={300} height={200} alt="world"/>
       </div>
 
     </section>
 
-    <section className="whyChooseUs">
+    <section style={{display: 'none'}}  className="whyChooseUs">
 
       <div className="titBox">
         <h2>Why <br />choose us?</h2>

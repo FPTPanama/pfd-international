@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 const Footer = () => {
   const currentYear = dayjs().year();
   return (
-    <div className='footerWrapper'>
+    <div id={'contact'} className='footerWrapper'>
 
       <div className='addBox'>
 

@@ -11,3 +11,11 @@
     margin-right: auto;
     margin-bottom: fontVar.$em4;   
 }
+
+@include mobile {
+
+    .main-layout {
+
+        margin-bottom: 0px;
+    }
+}

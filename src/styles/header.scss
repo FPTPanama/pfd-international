@@ -1,5 +1,7 @@
 @use '_font-variables' as fontVar;
 @import "./mixins.scss";
+
+
 .mainHeader {
     display: flex;
     justify-content: space-between;
@@ -10,8 +12,8 @@
     font-family: popReg;
     margin-bottom: fontVar.$em4;
     width: 100%;
-  
 
+  
     .imgBox {
 
         display: flex;
@@ -44,7 +46,7 @@
         align-items: center;
         gap: fontVar.$em4;
 
-        button {
+        a {
 
             all: unset;
             cursor: pointer;
@@ -57,4 +59,43 @@
         }
     }
 
+
 }
+@include mobile {
+        
+    .mainHeader {
+
+        flex-direction: column;
+
+       .imgBox {
+
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        gap: fontVar.$em1;
+
+        .title {
+
+            margin: 0px;
+            line-height: fontVar.$em3;
+        }
+
+        img {
+    
+            height: 50px;
+            width: auto;
+        }
+
+        p {
+            margin: 0px;
+        }
+       }
+
+       .butBox {
+
+        display: none;
+       }
+        
+    }
+}
+ 

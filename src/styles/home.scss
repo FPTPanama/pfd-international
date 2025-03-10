@@ -27,29 +27,49 @@
             align-items: start;
             width: 50%;
 
-            h1 {
-                font-size: fontVar.$fs7;
-            }
 
-            span {
-                font-family: popThin;
+
+            h1 {
+                font-size: fontVar.$fs6;
+                span {
+                    font-family: popThin;
+                }
             }
-        }
-    
-        .infBox {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
 
             p {
+
+                padding: fontVar.$em2;
+                background-color: var(--colBlaPfd);
                 span {
 
                     color: var(--rojOscPfd);
                     font-family: popBlack;
                 }
             }
+
+        }
+    
+        .infBox {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            img {
+
+                position: absolute;
+                z-index: -1;
+                width: 700px;
+                height: auto;
+                mix-blend-mode:darken;
+                top: 200px;
+                // right: -100px;
+
+            }
+
+
 
             .pfd {
                 font-family: popBlack;
@@ -140,7 +160,7 @@
             .griProBox {
     
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 width: 50%;
                 gap: fontVar.$em4;
                 
@@ -180,6 +200,12 @@
                 justify-content: center;
                 align-items: center;
                 width: 50%;
+
+                img {
+
+                    width: auto;
+                    height: 400px;
+                }
             }
 
 
@@ -268,4 +294,35 @@
     }
 
 
+}
+
+@include mobile {
+
+
+    .home {
+
+        .introWrapper {
+
+            flex-direction: column;
+
+            .titBox {
+
+                width: 100%;
+                p {
+                    background-color: transparent;
+                }
+            }
+
+            .infBox {
+
+                overflow: hidden;
+
+
+                img {
+
+                    display: none;
+                }
+            }
+        }
+    }
 }

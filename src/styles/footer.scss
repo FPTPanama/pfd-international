@@ -65,3 +65,22 @@
         
     }
 }
+
+@include mobile {
+
+    .footerWrapper {
+
+        flex-direction: column;
+
+        .addBox {
+
+            width: 100%;
+        }
+
+        .rigBox {
+
+            width: 100%;
+            justify-content: end;
+        }
+    }
+}
