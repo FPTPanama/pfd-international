@@ -37,4 +37,24 @@
         }
     }
 
+    .butBox {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: fontVar.$em4;
+
+        button {
+
+            all: unset;
+            cursor: pointer;
+            font-family: popBlack;
+
+            &:hover {
+                color: var(--rojOscPfd);
+                font-size: fontVar.$fs3;
+            }
+        }
+    }
+
 }
