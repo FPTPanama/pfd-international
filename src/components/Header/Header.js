@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className="butBox">
 
-        <ScrollLink href={'#mision'} offset={200} children={'Mision'}/> 
+        <ScrollLink href={'#mision'} offset={200} children={'Mission'}/> 
         <ScrollLink href="#products" offset={200} children={'Products'}/>
         <ScrollLink href={'#contact'} offset={200} children={'Contact'}/> 
       </div>
