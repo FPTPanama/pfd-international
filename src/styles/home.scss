@@ -10,14 +10,13 @@
     font-family: popMed;
     gap: fontVar.$em6;
 
-
-    
     .introWrapper {
     
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--negPfd);
+        height: calc(100vh - 120px);
     
         .titBox {
     
@@ -27,26 +26,35 @@
             align-items: start;
             width: 50%;
 
-
-
             h1 {
                 font-size: fontVar.$fs6;
+                margin-bottom: fontVar.$em3;
                 span {
                     font-family: popThin;
                 }
             }
 
-            p {
+            .pfd {
+                font-family: popBlack;
+                font-size: fontVar.$fs4;
+                margin: 0px;
+                max-width: 450px;
 
-                // padding: fontVar.$em2;
-                // background-color: var(--colBlaPfd);
-                span {
-
-                    color: var(--rojOscPfd);
-                    font-family: popBlack;
-                }
+                
             }
+            
+            .subPfd {
+                font-size: fontVar.$fs3;
+                font-family: popBold;
+                max-width: 450px;
+                
+            }
+            
+            span {
 
+                color: var(--rojOscPfd);
+                font-family: popBlack;
+            }
         }
     
         .infBox {
@@ -61,27 +69,9 @@
 
                 position: absolute;
                 z-index: -1;
-                width: 700px;
+                width: 800px;
                 height: auto;
-                mix-blend-mode:darken;
-                top: 100px;
-                // right: -100px;
-
-            }
-
-
-
-            .pfd {
-                font-family: popBlack;
-                font-size: fontVar.$fs4;
-                margin: 0px;
-
-       
-            }
-
-            .subPfd {
-                font-size: fontVar.$fs3;
-                font-family: popReg;
+                mix-blend-mode: darken;
 
             }
     
@@ -121,6 +111,14 @@
                         margin: 0px;
                     }
                 }
+
+        
+                    span {
+
+                        font-family: popBlack;
+                        color: var(--rojOscPfd);
+                    }
+              
     
             }
         }
@@ -132,87 +130,114 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
-        .titBox {
+        width: 100%;
+
+        .top {
 
             display: flex;
-            align-items: start;
-            justify-content: start;
-            flex-direction: column;
             width: 100%;
-
-            p {
-                font-size: fontVar.$fs4;
-                max-width: 350px;
-           
-            }
-        }
-
-        .infBox {
-
-            display: flex;
-            align-items: center;
             justify-content: center;
-            width: 100%;
-            box-sizing: border-box;
-       
+            align-items: center;
 
-            .griProBox {
+            .titBox {
     
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
                 width: 50%;
-                gap: fontVar.$em4;
-                
-                .griBox {
-                    
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: start;
+                border-right: 3px solid black;
     
-               
-    
-                    h3 {
-    
-                        font-family: popBlack;
-                        font-size: fontVar.$fs5;
-                        margin: 0px;
-                    }
-    
-                    ul {
-                        list-style: none;
-                        list-style-position: outside;
-                        padding: 0px;
+                p {
+                    font-size: fontVar.$fs7;
+                    max-width: 600px;
+                    margin: 0px;
+                    font-family: popReg;
+                    line-height: fontVar.$em3;
 
-                        li {
-                            font-size: fontVar.$fs4;
-                            font-family: popMed;
-                            line-height: calc(fontVar.$em3 * 1.2);
+                    span {
+
+                        color: var(--rojOscPfd);
+                    }
+               
+                }
+    
+                h2 {
+    
+                    margin: 0px;
+                }
+            }
+    
+            .infBox {
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                box-sizing: border-box;
+           
+    
+                .griProBox {
+        
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 50%;
+                    gap: fontVar.$em4;
+                    
+                    .griBox {
+                        
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+        
+                   
+        
+                        h3 {
+        
+                            font-family: popBlack;
+                            font-size: fontVar.$fs5;
+                            margin: 0px;
+                        }
+        
+                        ul {
+                            list-style: none;
+                            list-style-position: outside;
+                            padding: 0px;
+    
+                            li {
+                                font-size: fontVar.$fs4;
+                                font-family: popMed;
+                                line-height: calc(fontVar.$em3 * 1.2);
+                            }
                         }
                     }
                 }
+    
+
+    
+    
             }
 
-            .imgBox {
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 50%;
-
-                img {
-
-                    width: auto;
-                    height: 400px;
-                }
-            }
-
-
+            
         }
+        
+        .imgBox {
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 20px;
 
+            img {
 
+                width: auto;
+                height: 400px;
+                position: relative;
+                top: -30px;
+            }
+        }
     }
 
     .mainSources {
@@ -222,6 +247,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin-top: fontVar.$em6;
 
         .titBox {
 
@@ -306,6 +332,7 @@
         .introWrapper {
 
             flex-direction: column;
+            height: auto;
 
             .titBox {
 
@@ -337,47 +364,72 @@
 
         .ourPortafolio {
 
-
-
-            .infBox {
+            .top {
 
                 flex-direction: column;
+                gap: fontVar.$em5;
 
-                .griProBox {
+                .titBox {
 
-                    grid-template-columns: 1fr;
                     width: 100%;
-                    gap: fontVar.$em3;
+                    border: none;
 
-                    .griBox {
+                    p {
+                        font-size: fontVar.$fs6;
+                    }
+                }
 
+                .infBox {
+    
+                    flex-direction: column;
+                    width: 100%;
+    
+                    .griProBox {
+    
                         width: 100%;
-
-                        ul {
-
-                            li {
-
-                                font-size: fontVar.$fs3;
-                                line-height: fontVar.$em4;
+                        gap: fontVar.$em3;
+    
+                        .griBox {
+    
+                            width: 100%;
+    
+                            ul {
+    
+                                li {
+    
+                                    font-size: fontVar.$fs3;
+                                    line-height: fontVar.$em4;
+                                }
                             }
+                        }
+                    }
+    
+                    .imgBox {
+    
+                        width: 100%;
+    
+                        img {
+    
+                            width: 100px;
+                            height: auto;
                         }
                     }
                 }
 
-                .imgBox {
-
-                    width: 100%;
-
-                    img {
-
-                        width: 300px;
-                        height: auto;
-                    }
-                }
             }
+
+            .imgBox {
+
+                display: none;
+
+         
+            }
+
         }
 
         .mainSources {
+
+            margin-top: 0px;
 
             .titBox {
 

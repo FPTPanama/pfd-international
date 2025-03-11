@@ -47,8 +47,6 @@ const page = () => {
   return (
     <div className='home'>
 
-      
-
     <section className="introWrapper">
 
       <div className="titBox">
@@ -73,7 +71,7 @@ const page = () => {
 
     <section id={'mision'} className="misionVision">
 
-      <h2>Mission, vision and goals.</h2>
+      <h2>Mission, <br />vision and goals.</h2>
 
       <div className="gridMision">
         <div className="misBox">
@@ -81,19 +79,14 @@ const page = () => {
             <TbTargetArrow size={100} />
             <h3>Mission</h3>
           </div>
-          <p>To provide high-quality raw materials and logistics solutions to industries worldwide, optimizing supply chains through strategic partnerships, innovation, and a commitment to excellence.</p>
+          <p>To provide <span>high-quality raw materials</span> and <span>logistics solutions</span> to industries worldwide, optimizing supply chains through strategic partnerships, innovation, and a commitment to excellence.</p>
         </div>
         <div className="misBox">
           <div className="titBox">
             <MdOutlineRemoveRedEye size={100} />
             <h3>Vision</h3>
           </div>
-          <p>To be a globally recognized
-            leader in the trade and logistics
-            of industrial raw materials,
-            setting industry standards for
-            reliability, sustainability, and
-            efficiency.</p>
+          <p>To be a <span>globally recognized leader in the trade and logistics</span> of industrial raw materials, setting industry standards for reliability, sustainability, and efficiency.</p>
         </div>
         <div className="misBox">
           <div className="titBox">
@@ -102,14 +95,14 @@ const page = () => {
 
           </div>
           <ul>
-            <li>Expand our presence in key
-              global markets by
+            <li><span>Expand our presence in key
+            global markets</span> by
               strengthening our strategic
               alliances.
             </li>
             <li>
-              Ensure the consistent and
-              efficient supply of high-
+              <span>Ensure the consistent and
+              efficient</span> supply of high-
               quality raw materials to our
               clients.
             </li>
@@ -121,48 +114,48 @@ const page = () => {
 
     <section id={'products'} className="ourPortafolio">
 
-      <div className="titBox">
-        <h2>Our Product portafolio</h2>
-        <p>We specialize in the trade and distribution
-        of industrial raw materials.</p>
-      </div>
+      <div className="top">
 
-      <div className="infBox">
+        <div className="titBox">
+          <p>We specialize in the trade and distribution
+          of <span>industrial raw materials</span>.</p>
+        </div>
 
-        <div className="griProBox">
+        <div className="infBox">
 
-          <div className="griBox">
-            <h3>Metal</h3>
-            <ul>
-              <li>Iron Ore</li>
-              <li>Anthracite</li>
-              <li>Pellets</li>
-              <li>Pig Iron</li>
-              <li>Steel</li>
-              <li>Aluminum</li>
-            </ul>
-          </div>
-          <div className="griBox">
-            <h3>Chemicals</h3>
-            <ul>
-              <li>Caustic Soda</li>
-              <li>Sulfuric Acid</li>
-              <li>Hydrochloric Acid</li>
-              <li>Sodium Hypochlorite</li>
-              <li>Ammonium Nitrate</li>
-            </ul>
+          <div className="griProBox">
+
+            <div className="griBox">
+              <h3>Metal</h3>
+              <ul>
+                <li>Iron Ore</li>
+                <li>Anthracite</li>
+                <li>Pellets</li>
+                <li>Pig Iron</li>
+                <li>Steel</li>
+                <li>Aluminum</li>
+              </ul>
+            </div>
+            <div className="griBox">
+              <h3>Chemicals</h3>
+              <ul>
+                <li>Caustic Soda</li>
+                <li>Sulfuric Acid</li>
+                <li>Hydrochloric Acid</li>
+                <li>Sodium Hypochlorite</li>
+                <li>Ammonium Nitrate</li>
+              </ul>
+            </div>
+
           </div>
 
         </div>
 
-        <div className="imgBox">
-          <Image src={'/img/home/hierro.webp'} width={2165} height={2078} alt="hierro"/>
-        </div>
-
-
       </div>
 
-
+      <div className="imgBox">
+        <Image src={'/img/home/hierro.webp'} width={2165} height={2078} alt="hierro"/>
+      </div>
 
     </section>
 

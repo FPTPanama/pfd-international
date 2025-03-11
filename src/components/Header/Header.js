@@ -10,8 +10,11 @@ const Header = () => {
     <div className='mainHeader'>
       <div className='imgBox'>
         <Image width={70} height={70} alt='logo' src={'/img/home/pfd_logo_color.svg'} />
-        <p className="title">PFD</p>
-        <p>INTERNATIONAL GROUP</p>
+
+        <div className='logTit'>
+          <p className="title">PFD</p>
+          <p>INTERNATIONAL GROUP</p>
+        </div>
       </div>
 
       <div className="butBox">

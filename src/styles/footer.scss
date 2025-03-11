@@ -19,12 +19,13 @@
         }
     }
 
+
     .addBox {
 
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
+        gap: fontVar.$em5;
 
 
         .tit {
@@ -41,6 +42,36 @@
             span {
 
                 font-family: popBlack;
+            }
+        }
+
+        .telBox {
+
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border-left: 3px solid black;
+            padding-left: fontVar.$em4;
+            flex-grow: 1;
+
+            p {
+                font-family: fontVar.$fs3;
+                margin: 0px;
+
+                &:hover {
+
+                    color: var(--rojOscPfd);
+                }
+
+                a {
+
+                    text-decoration: none;
+                }
+
+                span {
+
+                    font-family: popBlack;
+                }
             }
         }
     }
@@ -71,16 +102,52 @@
     .footerWrapper {
 
         flex-direction: column;
+        gap: fontVar.$em3;
 
         .addBox {
 
             width: 100%;
+            flex-direction: column;
+
+            .titBox {
+
+                width: 100%;
+
+                p {
+                    font-family: fontVar.$fs3;
+
+                    span {
+
+                        font-family: popBlack;
+                    }
+                }
+                
+            }
+
+            .telBox {
+
+                width: 100%;
+                padding: 0px;
+                border: none;
+            }
         }
 
         .rigBox {
 
             width: 100%;
-            justify-content: end;
+            justify-content: start;
+
+
+            p {
+                order: 2;
+            }
+
+            .box {
+
+                order: 1;
+                height: 30px;
+            }
+            
         }
     }
 }
