@@ -73,13 +73,13 @@ const page = () => {
 
     <section id={'mision'} className="misionVision">
 
-      <h2>Mision, vision and goals.</h2>
+      <h2>Mission, vision and goals.</h2>
 
       <div className="gridMision">
         <div className="misBox">
           <div className="titBox">
             <TbTargetArrow size={100} />
-            <h3>Mision</h3>
+            <h3>Mission</h3>
           </div>
           <p>To provide high-quality raw materials and logistics solutions to industries worldwide, optimizing supply chains through strategic partnerships, innovation, and a commitment to excellence.</p>
         </div>
