@@ -28,10 +28,13 @@
                 font-size: fontVar.$fs6;
                 color: var(--negPfd);
                 font-family: popBlack;
+                margin: 0px;
+                line-height: fontVar.$em3;
               
             }
             p {
                 font-size: fontVar.$fs3;
+                margin: 0px;
             }
 
         }
