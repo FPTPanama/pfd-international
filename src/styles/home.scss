@@ -38,8 +38,8 @@
 
             p {
 
-                padding: fontVar.$em2;
-                background-color: var(--colBlaPfd);
+                // padding: fontVar.$em2;
+                // background-color: var(--colBlaPfd);
                 span {
 
                     color: var(--rojOscPfd);
@@ -301,6 +301,8 @@
 
     .home {
 
+        gap: fontVar.$em5;
+
         .introWrapper {
 
             flex-direction: column;
@@ -322,6 +324,77 @@
 
                     display: none;
                 }
+            }
+        }
+
+        .misionVision {
+
+            .gridMision {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ourPortafolio {
+
+
+
+            .infBox {
+
+                flex-direction: column;
+
+                .griProBox {
+
+                    grid-template-columns: 1fr;
+                    width: 100%;
+                    gap: fontVar.$em3;
+
+                    .griBox {
+
+                        width: 100%;
+
+                        ul {
+
+                            li {
+
+                                font-size: fontVar.$fs3;
+                                line-height: fontVar.$em4;
+                            }
+                        }
+                    }
+                }
+
+                .imgBox {
+
+                    width: 100%;
+
+                    img {
+
+                        width: 300px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .mainSources {
+
+            .titBox {
+
+                margin-bottom: fontVar.$em4;
+            }
+
+            .imgBox {
+
+                width: 100%;
+            }
+        }
+
+        .whyChooseUs {
+
+            .griWhyUs {
+
+                grid-template-columns: 1fr;
             }
         }
     }

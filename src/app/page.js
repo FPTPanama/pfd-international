@@ -71,7 +71,7 @@ const page = () => {
 
     </section>
 
-    <section style={{display: 'none'}} id={'mision'} className="misionVision">
+    <section id={'mision'} className="misionVision">
 
       <h2>Mision, vision and goals.</h2>
 
@@ -119,7 +119,7 @@ const page = () => {
 
     </section>
 
-    <section style={{display: 'none'}}  id={'products'} className="ourPortafolio">
+    <section id={'products'} className="ourPortafolio">
 
       <div className="titBox">
         <h2>Our Product portafolio</h2>
@@ -166,7 +166,7 @@ const page = () => {
 
     </section>
 
-    <section style={{display: 'none'}}  className="mainSources">
+    <section className="mainSources">
 
       <div className="titBox">
         <h2>Main sources of supply</h2>
@@ -178,7 +178,7 @@ const page = () => {
 
     </section>
 
-    <section style={{display: 'none'}}  className="whyChooseUs">
+    <section className="whyChooseUs">
 
       <div className="titBox">
         <h2>Why <br />choose us?</h2>

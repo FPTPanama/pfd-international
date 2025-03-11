@@ -41,13 +41,6 @@ body {
 	background-size: 50%;
 	margin: 0;
 	padding: 0;
-
-	h2 {
-		font-size: fontVar.$fs7;
-		font-family: popBlack;
-		max-width: 400px;
-		margin: 0px;
-	}
 		
 
 }
@@ -644,7 +637,7 @@ h1 {
 
 	@include mobile {
 
-		font-size: fontVar.$fs5;
+		font-size: fontVar.$fs4;
 	}
 
 }
@@ -678,8 +671,8 @@ h1 {
 
 h2 {
 
-	font-size: fontVar.$fs5;
-	font-family: popThin;
+	font-size: fontVar.$fs6;
+	font-family: popBlack;
 	color: var(--azuOscHrk);
 	max-width: 560px;
 	line-height: fontVar.$em3;
@@ -693,7 +686,7 @@ h2 {
 
 	@include mobile {
 
-		font-size: calc(fontVar.$fs5*0.86);
+		font-size: calc(fontVar.$fs6*0.86);
 		max-width: 100%;
 		
 	}
